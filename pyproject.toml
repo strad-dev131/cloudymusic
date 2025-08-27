@@ -1,0 +1,78 @@
+[project]
+name = "cloudymusic"
+version = "1.2.2"
+description = "Telegram Music Bot with full playback support using PyTdBot and PyTgCalls"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Elite Sid", email = "stradiogamer@gmail.com" },
+]
+keywords = [
+    "telegram",
+    "music",
+    "bot",
+    "async",
+    "tdlib",
+    "pytgcalls",
+    "voicechat",
+    "spotify",
+    "ytmusic",
+    "opensource",
+    "pytdbot",
+    "py-tgcalls",
+    "yt-dlp",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Communications :: Chat :: Telegram",
+    "Topic :: Multimedia :: Sound/Audio :: Players",
+    "Environment :: Console",
+    "Framework :: AsyncIO",
+]
+dependencies = [
+    "aiofiles~=24.1.0",
+    "cachetools~=6.1.0",
+    "kurigram~=2.2.7",
+    "meval~=2.5",
+    "ntgcalls~=2.0.6",
+    "pillow~=11.3.0",
+    "psutil~=7.0.0",
+    "py-yt-search~=0.3",
+    "pycryptodome~=3.23.0",
+    "pydantic~=2.11.7",
+    "pymongo~=4.14.0",
+    "py-tgcalls~=2.2.6",
+    "pytgcrypto~=1.2.11",
+    "pytdbot~=0.9.6.dev1",
+    "pytz~=2025.2",
+    "tdjson~=1.8.51",
+    "ujson~=5.10.0",
+    "yt-dlp~=2025.7.21",
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.optional-dependencies]
+dev = [
+    "setuptools~=80.9.0",
+    "black",
+    "ruff",
+]
+
+[project.scripts]
+cloudymusic = "cloudymusic.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/strad-dev131/cloudymusic"
+Source = "https://github.com/strad-dev131/cloudymusic"
+"Issue Tracker" = "https://github.com/strad-dev131/cloudymusic/issues"
+
+[tool.uv]
+package = true
+
+[tool.setuptools]
+packages = [
+    "cloudymusic",
+]

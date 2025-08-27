@@ -1,0 +1,7 @@
+__pycache__/
+/.idea
+/database
+.env
+/cloudymusic/cookies
+/cloudymusic.egg-info
+*.log
