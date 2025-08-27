@@ -1,1 +1,1 @@
-worker: cloudymusic
+worker: python -m cloudymusic
